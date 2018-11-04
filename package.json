@@ -1,0 +1,72 @@
+{
+  "name": "cruise",
+  "version": "1.0.0",
+  "description": "Front-End Developer Interview Homework.",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --mode production --progress --hide-modules",
+    "unit": "jest",
+    "e2e": "echo No e2e specified",
+    "test": "npm run unit && npm run e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://thoughtworks.com/kimseongrim/cruise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://thoughtworks.com/kimseongrim/cruise/issues"
+  },
+  "homepage": "https://thoughtworks.com/kimseongrim/cruise#readme",
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-import": "^1.9.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "bootstrap": "^3.3.7",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "iview-loader": "^1.2.2",
+    "jest": "^23.6.0",
+    "jquery": "^1.12.4",
+    "js-beautify": "^1.8.3-rc3",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "vue-jest": "^3.0.0",
+    "vue-loader": "^15.4.2",
+    "vue-router": "^3.0.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "electron": "^1.7.11",
+    "iview": "^3.1.3",
+    "vue": "^2.5.17",
+    "vuex": "^3.0.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "mapCoverage": true
+  }
+}
