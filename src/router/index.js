@@ -19,11 +19,21 @@ const LayoutComponent = {
   `
 }
 
+const OtherComponent = {
+  template: `
+    <div>
+      <h1>Other</h1>
+      <p>Other test</p>
+    </div>
+  `
+}
+
 export default new VueRouter({
   routes: [{
     path: '/',
     components: {
-      default: LayoutComponent
+      default: LayoutComponent,
+      other: OtherComponent
     },
     children: [news, games]
   }]

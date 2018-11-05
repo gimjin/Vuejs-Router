@@ -9,6 +9,8 @@
       <li><router-link to="/games/海岛奇兵">海岛奇兵</router-link></li>
     </ul>
     <router-view></router-view>
+    <hr>
+    <router-view name="other"></router-view>
   </div>
 </div>
 </template>
